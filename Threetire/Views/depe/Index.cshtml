@@ -1,0 +1,47 @@
+﻿@model BussinessObject.Ubussinessobject
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+<div class="container">
+    <div class="rows">
+        <div class="form-group">
+            @Html.LabelFor(expression: model => model.userid, htmlAttributes: new { @class = "control-lable" })
+            @Html.EditorFor(expression: model => model.userid)
+        </div>
+    </div>
+    <div class="rows">
+        <div class="form-group">
+            @Html.LabelFor(expression: model => model.userfirstname, htmlAttributes: new { @class = "control-lable" })
+            @Html.EditorFor(expression: model => model.userfirstname)
+        </div>
+    </div>
+    <div class="rows">
+        <div class="form-group">
+            @Html.LabelFor(expression: model => model.userlastname, htmlAttributes: new { @class = "control-lable" })
+            @Html.EditorFor(expression: model => model.userlastname)
+        </div>
+    </div>
+    <div class="rows">
+        <div class="form-group">
+            @Html.LabelFor(expression: model => model.useraddress, htmlAttributes: new { @class = "control-lable" })
+            @Html.EditorFor(expression: model => model.useraddress)
+        </div>
+    </div>
+    <div class="rows">
+        <div class="form-group">
+            @Html.LabelFor(expression: model => model.useremail, htmlAttributes: new { @class = "control-lable" })
+            @Html.EditorFor(expression: model => model.useremail)
+        </div>
+    </div>
+    <div class="rows">
+        <div class="form-group">
+           <input type="submit" value="save" class="btn btn-primary"/>
+        </div>
+    </div>
+    </div>
+  }
